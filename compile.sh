@@ -1,5 +1,7 @@
 #!/bin/bash
 
+rm *.o *.so
+
 gcc -c -fpic foo.c 
 
 gcc -shared -o libfoo.so foo.o
